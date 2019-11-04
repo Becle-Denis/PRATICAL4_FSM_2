@@ -2,6 +2,7 @@
 #include "Idle.h"
 #include "Jumping.h"
 #include "Falling.h"
+#include "RunningLeft.h"
 
 void WalkingLeft::handleInput(PlayerFSM* a, sf::Event event)
 {
@@ -17,6 +18,11 @@ void WalkingLeft::handleInput(PlayerFSM* a, sf::Event event)
 	{
 		idle(a);
 	}
+	else if (sf::Keyboard::isKeyPressed(sf::Keyboard::Left))
+	{
+
+		runningLeft(a);
+	}
 }
 
 void WalkingLeft::idle(PlayerFSM* a)
@@ -25,6 +31,15 @@ void WalkingLeft::idle(PlayerFSM* a)
 	State* previous = a->getPrevious();
 	a->setPrevious(a->getCurrent());
 	a->setCurrent(new Idle());
+	delete previous;
+}
+
+void WalkingLeft::runningLeft(PlayerFSM* a)
+{
+	std::cout << "Walking Left -> runningLeft" << std::endl;
+	State* previous = a->getPrevious();
+	a->setPrevious(a->getCurrent());
+	a->setCurrent(new RunningLeft());
 	delete previous;
 }
 

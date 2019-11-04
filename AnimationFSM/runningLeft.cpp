@@ -1,9 +1,9 @@
-#include "runningLeft.h"
+#include "RunningLeft.h"
 #include "WalkingLeft.h"
 
 
 
-void runningLeft::handleInput(PlayerFSM* a, sf::Event event)
+void RunningLeft::handleInput(PlayerFSM* a, sf::Event event)
 {
 	if (sf::Keyboard::isKeyPressed(sf::Keyboard::Right))
 	{
@@ -11,7 +11,7 @@ void runningLeft::handleInput(PlayerFSM* a, sf::Event event)
 	}
 }
 
-void runningLeft::walkingLeft(PlayerFSM* a)
+void RunningLeft::walkingLeft(PlayerFSM* a)
 {
 	std::cout << "Running Left -> Walking Left" << std::endl;
 	State* previous = a->getPrevious();
@@ -20,7 +20,7 @@ void runningLeft::walkingLeft(PlayerFSM* a)
 	delete previous;
 }
 
-int runningLeft::getSpriteIndex()
+int RunningLeft::getSpriteIndex()
 {
 	return 5;
 }

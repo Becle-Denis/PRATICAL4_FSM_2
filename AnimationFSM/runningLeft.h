@@ -3,10 +3,12 @@
 
 #include <State.h>
 
-class runningLeft : public State
+class RunningLeft : public State
 {
-	runningLeft() {};
-	~runningLeft() {};
+
+public:
+	RunningLeft() {};
+	~RunningLeft() {};
 
 	void handleInput(PlayerFSM* a, sf::Event event) override;
 
@@ -17,5 +19,4 @@ class runningLeft : public State
 
 
 #endif // !RUNNINGLEFT_H
-
 

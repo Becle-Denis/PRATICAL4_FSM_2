@@ -82,7 +82,14 @@ int main()
 	animatedSprites.at(4).addFrame(sf::IntRect(515, 290, 55, 55));
 
 	//runningLeft animatedSprite
-	animatedSprites.at(5).addFrame(sf::IntRect(65, 347, 50, 55));
+	animatedSprites.at(5).addFrame(sf::IntRect(65, 347, 45, 55));
+	animatedSprites.at(5).addFrame(sf::IntRect(115, 347, 45, 55));
+	animatedSprites.at(5).addFrame(sf::IntRect(165, 347, 45, 55));
+	animatedSprites.at(5).addFrame(sf::IntRect(215, 347, 45, 55));
+	animatedSprites.at(5).addFrame(sf::IntRect(265, 347, 45, 55));
+	animatedSprites.at(5).addFrame(sf::IntRect(315, 347, 45, 55));
+	animatedSprites.at(5).addFrame(sf::IntRect(365, 347, 45, 55));
+	animatedSprites.at(5).addFrame(sf::IntRect(415, 347, 45, 55));
 
 	//WalkingRigth animatedSprite
 	animatedSprites.at(6).addFrame(sf::IntRect(505, 290, 55, 55));
@@ -97,7 +104,14 @@ int main()
 	animatedSprites.at(6).addFrame(sf::IntRect(55, 290, 55, 55));
 
 	//runningRight animatedSprite
-	animatedSprites.at(7).addFrame(sf::IntRect(505, 347, 50, 55));
+	animatedSprites.at(7).addFrame(sf::IntRect(505, 347, 55, 55));
+	animatedSprites.at(7).addFrame(sf::IntRect(455, 347, 55, 55));
+	animatedSprites.at(7).addFrame(sf::IntRect(405, 347, 55, 55));
+	animatedSprites.at(7).addFrame(sf::IntRect(355, 347, 55, 55));
+	animatedSprites.at(7).addFrame(sf::IntRect(305, 347, 55, 55));
+	animatedSprites.at(7).addFrame(sf::IntRect(255, 347, 55, 55));
+	animatedSprites.at(7).addFrame(sf::IntRect(205, 347, 55, 55));
+	animatedSprites.at(7).addFrame(sf::IntRect(155, 347, 55, 55));
 
 	// Setup the Player
 	Player player(animatedSprites);

@@ -78,6 +78,9 @@
     <ClInclude Include="WalkingRight.h">
       <Filter>Header Files\FSM</Filter>
     </ClInclude>
+    <ClInclude Include="runningLeft.h">
+      <Filter>Header Files\FSM</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="main.cpp">
@@ -108,6 +111,9 @@
       <Filter>Source Files\FSM</Filter>
     </ClCompile>
     <ClCompile Include="WalkingRight.cpp">
+      <Filter>Source Files\FSM</Filter>
+    </ClCompile>
+    <ClCompile Include="runningLeft.cpp">
       <Filter>Source Files\FSM</Filter>
     </ClCompile>
   </ItemGroup>

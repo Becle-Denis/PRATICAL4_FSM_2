@@ -28,6 +28,8 @@ public:
 	virtual void walkingLeft(PlayerFSM* a) {};
 
 	virtual void walkingRight(PlayerFSM* a) {};
+
+	virtual void runningLeft(PlayerFSM* a) {};
 };
 
 #endif // ! ANIMATION_H

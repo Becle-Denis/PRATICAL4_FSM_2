@@ -28,6 +28,7 @@
     <ClInclude Include="Jumping.h" />
     <ClInclude Include="Player.h" />
     <ClInclude Include="RunningLeft.h" />
+    <ClInclude Include="RunningRight.h" />
     <ClInclude Include="State.h" />
     <ClInclude Include="WalkingLeft.h" />
     <ClInclude Include="WalkingRight.h" />
@@ -42,6 +43,7 @@
     <ClCompile Include="main.cpp" />
     <ClCompile Include="Player.cpp" />
     <ClCompile Include="RunningLeft.cpp" />
+    <ClCompile Include="RunningRight.cpp" />
     <ClCompile Include="WalkingLeft.cpp" />
     <ClCompile Include="WalkingRight.cpp" />
   </ItemGroup>

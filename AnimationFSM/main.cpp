@@ -33,8 +33,11 @@ int main()
 		AnimatedSprite a(texture);
 		animatedSprites.push_back(a);
 	}
-	AnimatedSprite ar(reverseTexture);
-	animatedSprites.push_back(ar);
+	for (int i = 0; i < 2; i++)
+	{
+		AnimatedSprite a(reverseTexture);
+		animatedSprites.push_back(a);
+	}
 
 	
 	//Falling animatedSprite
@@ -92,6 +95,9 @@ int main()
 	animatedSprites.at(6).addFrame(sf::IntRect(155, 290, 55, 55));
 	animatedSprites.at(6).addFrame(sf::IntRect(105, 290, 55, 55));
 	animatedSprites.at(6).addFrame(sf::IntRect(55, 290, 55, 55));
+
+	//runningRight animatedSprite
+	animatedSprites.at(7).addFrame(sf::IntRect(0, 0, 50, 55));
 
 	// Setup the Player
 	Player player(animatedSprites);

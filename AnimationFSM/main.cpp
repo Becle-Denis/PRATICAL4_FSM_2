@@ -82,7 +82,7 @@ int main()
 	animatedSprites.at(4).addFrame(sf::IntRect(515, 290, 55, 55));
 
 	//runningLeft animatedSprite
-	animatedSprites.at(5).addFrame(sf::IntRect(0, 0, 50, 55));
+	animatedSprites.at(5).addFrame(sf::IntRect(65, 347, 50, 55));
 
 	//WalkingRigth animatedSprite
 	animatedSprites.at(6).addFrame(sf::IntRect(505, 290, 55, 55));
@@ -97,7 +97,7 @@ int main()
 	animatedSprites.at(6).addFrame(sf::IntRect(55, 290, 55, 55));
 
 	//runningRight animatedSprite
-	animatedSprites.at(7).addFrame(sf::IntRect(0, 0, 50, 55));
+	animatedSprites.at(7).addFrame(sf::IntRect(505, 347, 50, 55));
 
 	// Setup the Player
 	Player player(animatedSprites);

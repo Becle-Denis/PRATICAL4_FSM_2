@@ -16,6 +16,7 @@ public:
 	void falling(PlayerFSM* a) override;
 	void walkingLeft(PlayerFSM* a) override;
 	void walkingRight(PlayerFSM* a) override;
+	void armLoading(PlayerFSM* a) override;
 
 	int getSpriteIndex() override;
 };

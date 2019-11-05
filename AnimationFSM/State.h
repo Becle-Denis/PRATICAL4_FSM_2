@@ -32,6 +32,8 @@ public:
 	virtual void runningLeft(PlayerFSM* a) {};
 
 	virtual void runningRight(PlayerFSM* a) {};
+
+	virtual void armLoading(PlayerFSM* a) {};
 };
 
 #endif // ! ANIMATION_H

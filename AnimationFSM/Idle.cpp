@@ -3,6 +3,7 @@
 #include <WalkingLeft.h>
 #include <WalkingRight.h>
 #include <Falling.h>
+#include <ArmLoading.h>
 
 #include <string>
 
@@ -25,6 +26,10 @@ void Idle::handleInput(PlayerFSM* a, sf::Event event)
 	{
 		walkingRight(a);
 	}
+	else if (sf::Keyboard::isKeyPressed(sf::Keyboard::Space))
+	{
+		armLoading(a);
+	}
 }
 
 
@@ -43,6 +48,15 @@ void Idle::walkingRight(PlayerFSM* a)
 	State* previous = a->getPrevious();
 	a->setPrevious(a->getCurrent());
 	a->setCurrent(new WalkingRight());
+	delete previous;
+}
+
+void Idle::armLoading(PlayerFSM* a)
+{
+	std::cout << "Idle -> Arm Loading" << std::endl;
+	State* previous = a->getPrevious();
+	a->setPrevious(a->getCurrent());
+	a->setCurrent(new ArmLoading());
 	delete previous;
 }
 

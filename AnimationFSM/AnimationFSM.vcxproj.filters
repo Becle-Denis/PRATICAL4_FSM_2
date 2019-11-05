@@ -84,6 +84,9 @@
     <ClInclude Include="RunningRight.h">
       <Filter>Header Files\FSM</Filter>
     </ClInclude>
+    <ClInclude Include="ArmLoading.h">
+      <Filter>Header Files\FSM</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="main.cpp">
@@ -120,6 +123,9 @@
       <Filter>Source Files\FSM</Filter>
     </ClCompile>
     <ClCompile Include="RunningRight.cpp">
+      <Filter>Source Files\FSM</Filter>
+    </ClCompile>
+    <ClCompile Include="ArmLoading.cpp">
       <Filter>Source Files\FSM</Filter>
     </ClCompile>
   </ItemGroup>

@@ -36,7 +36,7 @@ void WalkingLeft::idle(PlayerFSM* a)
 
 void WalkingLeft::runningLeft(PlayerFSM* a)
 {
-	std::cout << "Walking Left -> runningLeft" << std::endl;
+	std::cout << "Walking Left -> Running Left" << std::endl;
 	State* previous = a->getPrevious();
 	a->setPrevious(a->getCurrent());
 	a->setCurrent(new RunningLeft());

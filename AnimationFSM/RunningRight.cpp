@@ -11,7 +11,7 @@ void RunningRight::handleInput(PlayerFSM* a, sf::Event event)
 
 void RunningRight::walkingRight(PlayerFSM* a)
 {
-	std::cout << "Running right -> Walking Right" << std::endl;
+	std::cout << "Running Right -> Walking Right" << std::endl;
 	State* previous = a->getPrevious();
 	a->setPrevious(a->getCurrent());
 	a->setCurrent(new WalkingRight());

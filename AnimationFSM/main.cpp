@@ -21,7 +21,7 @@ int main()
 	// Load a reversedSprite
 	sf::Texture reverseTexture;
 	if (!reverseTexture.loadFromFile("assets\\raymanGridReverse.png")) {
-		DEBUG_MSG("Failed to load file");
+		DEBUG_MSG("Failed to load file 2");
 		return EXIT_FAILURE;
 	}
 	

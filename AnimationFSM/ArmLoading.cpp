@@ -3,7 +3,7 @@
 
 int ArmLoading::getSpriteIndex()
 {
-	return 0;
+	return 6;
 }
 
 void ArmLoading::update(PlayerFSM* a)

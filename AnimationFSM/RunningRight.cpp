@@ -20,5 +20,5 @@ void RunningRight::walkingRight(PlayerFSM* a)
 
 int RunningRight::getSpriteIndex()
 {
-	return 7;
+	return 8;
 }

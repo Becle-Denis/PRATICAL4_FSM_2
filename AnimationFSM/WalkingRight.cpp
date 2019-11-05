@@ -36,7 +36,7 @@ void WalkingRight::idle(PlayerFSM* a)
 
 int WalkingRight::getSpriteIndex()
 {
-	return 6;
+	return 7;
 }
 
 

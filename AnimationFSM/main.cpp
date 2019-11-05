@@ -92,7 +92,10 @@ int main()
 	animatedSprites.at(5).addFrame(sf::IntRect(415, 347, 45, 55));
 
 	//armLoagind animatedSprite 
-	animatedSprites.at(6).addFrame(sf::IntRect(65, 175, 55, 55));
+	animatedSprites.at(6).addFrame(sf::IntRect(215, 638, 45, 55));
+	animatedSprites.at(6).addFrame(sf::IntRect(265, 638, 45, 55));
+	animatedSprites.at(6).addFrame(sf::IntRect(315, 638, 45, 55));
+	animatedSprites.at(6).addFrame(sf::IntRect(365, 638, 45, 55));
 
 	//WalkingRigth animatedSprite
 	animatedSprites.at(7).addFrame(sf::IntRect(505, 290, 55, 55));

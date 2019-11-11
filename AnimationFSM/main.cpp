@@ -11,6 +11,7 @@ int main()
 	// Create the main window
 	sf::RenderWindow window(sf::VideoMode(800, 600), "SFML window");
 
+
 	// Load a sprite to display
 	sf::Texture texture;
 	if (!texture.loadFromFile("assets\\raymanGrid.png")) {
@@ -25,8 +26,9 @@ int main()
 		return EXIT_FAILURE;
 	}
 	
-	
-	//seting up animated sprites
+	//----Animated Sprite creation --------------------------
+
+	//Creating up animated sprites (maybe not the good place)
 	std::vector<AnimatedSprite> animatedSprites;
 	for (int i = 0; i < 7; i++)
 	{
@@ -39,6 +41,7 @@ int main()
 		animatedSprites.push_back(a);
 	}
 
+	
 	
 	//Falling animatedSprite
 	animatedSprites.at(0).addFrame(sf::IntRect(260, 522, 50, 55));
@@ -119,9 +122,13 @@ int main()
 	animatedSprites.at(8).addFrame(sf::IntRect(210, 347, 50, 55));
 	animatedSprites.at(8).addFrame(sf::IntRect(160, 347, 50, 55));
 
+
 	// Setup the Player
 	Player player(animatedSprites);
 	
+
+	//-------------------------GAME LOOP----------------------------
+
 	// Start the game loop
 	while (window.isOpen())
 	{
